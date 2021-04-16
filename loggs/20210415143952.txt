@@ -1,0 +1,33 @@
+20210415144001:::
+inmost_light:::
+Вызвать мастера на четвер на 17:00:::
+Сначала пройдите верификацию. Введите 8 цифр вашего договора.
+[balance_and_home_service]
+Entities
+{'span': {'start': 19, 'end': 24}, 'role': 'day', 'text': 'четвер', 'type': 'sys_time', 'value': [{'value': '2021-04-22T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-22T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-29T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}]}
+{'span': {'start': 29, 'end': 33}, 'role': 'day', 'text': '17:00', 'type': 'sys_time', 'value': [{'value': '2021-04-15T17:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-16T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}]}:::
+==========================
+20210415144010:::
+inmost_light:::
+12345678:::
+Введите номер вашего дома.
+[verification]
+Entities
+{'span': {'start': 0, 'end': 7}, 'role': 'service_number', 'text': '12345678', 'type': 'sys_number', 'value': [{'value': 12345678}]}:::
+==========================
+20210415144013:::
+inmost_light:::
+93:::
+Ваш баланс: -555
+[verification]
+Entities
+{'span': {'start': 0, 'end': 1}, 'role': 'house_number', 'text': '93', 'type': 'sys_number', 'value': [{'value': 93}]}:::
+==========================
+20210415144013:::
+inmost_light:::
+93:::
+На который час вы желаете вызвать мастера?
+[verification]
+Entities
+{'span': {'start': 0, 'end': 1}, 'role': 'house_number', 'text': '93', 'type': 'sys_number', 'value': [{'value': 93}]}:::
+==========================

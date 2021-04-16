@@ -1,0 +1,1000 @@
+20210415145918:::
+yurii_paustovskyi:::
+welcome:::
+[greet]:::
+():::
+Привет:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Приветствую, Юрій!'}}]:::
+==========================
+20210415145933:::
+yurii_paustovskyi:::
+balance_and_home_service_hour:::
+[home_service]:::
+(immutables.Map({'text': 'четвер', 'value': [{'value': '2021-04-22T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-22T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-29T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'type': 'sys_time', 'role': 'day', 'span': {'start': 24, 'end': 29}}), immutables.Map({'text': '17:00', 'value': [{'value': '2021-04-15T17:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-16T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'type': 'sys_time', 'role': 'hour', 'span': {'start': 34, 'end': 38}})):::
+Хочу вызвать мастера на четвер на 17:00:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сначала пройдите верификацию. Введите 8 цифр вашего договора.'}}]:::
+==========================
+20210415145933:::
+yurii_paustovskyi:::
+balance_and_home_service:::
+[home_service]:::
+(immutables.Map({'text': 'четвер', 'value': [{'value': '2021-04-22T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-22T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-29T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'type': 'sys_time', 'role': 'day', 'span': {'start': 24, 'end': 29}}), immutables.Map({'text': '17:00', 'value': [{'value': '2021-04-15T17:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-16T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'type': 'sys_time', 'role': 'hour', 'span': {'start': 34, 'end': 38}})):::
+Хочу вызвать мастера на четвер на 17:00:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сначала пройдите верификацию. Введите 8 цифр вашего договора.'}}]:::
+==========================
+20210415145933:::
+yurii_paustovskyi:::
+home_service:::
+[home_service]:::
+(immutables.Map({'text': 'четвер', 'value': [{'value': '2021-04-22T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-22T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-29T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'type': 'sys_time', 'role': 'day', 'span': {'start': 24, 'end': 29}}), immutables.Map({'text': '17:00', 'value': [{'value': '2021-04-15T17:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-16T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'type': 'sys_time', 'role': 'hour', 'span': {'start': 34, 'end': 38}})):::
+Хочу вызвать мастера на четвер на 17:00:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сначала пройдите верификацию. Введите 8 цифр вашего договора.'}}]:::
+==========================
+20210415145940:::
+yurii_paustovskyi:::
+verify_service_number:::
+[verification]:::
+(immutables.Map({'text': '87654321', 'value': [{'value': 87654321}], 'type': 'sys_number', 'role': 'service_number', 'span': {'start': 0, 'end': 7}}),):::
+87654321:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Введите номер вашего дома.'}}]:::
+==========================
+20210415145942:::
+yurii_paustovskyi:::
+balance_and_home_service_hour:::
+[verification]:::
+(immutables.Map({'text': '71', 'value': [{'value': 71}], 'type': 'sys_number', 'role': 'house_number', 'span': {'start': 0, 'end': 1}}),):::
+71:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите вызвать мастера на 2021-04-22 17:00?'}}]:::
+==========================
+20210415145942:::
+yurii_paustovskyi:::
+verify_house_number:::
+[verification]:::
+(immutables.Map({'text': '71', 'value': [{'value': 71}], 'type': 'sys_number', 'role': 'house_number', 'span': {'start': 0, 'end': 1}}),):::
+71:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите вызвать мастера на 2021-04-22 17:00?'}}]:::
+==========================
+20210415170124:::
+yurii_paustovskyi:::
+balance_and_home_service_confirm:::
+[greet]:::
+():::
+здравствуйте:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Повторите, пожалуйста, вы хотите вызвать мастера на 2021-04-22 17:00?'}}]:::
+==========================
+20210415170127:::
+yurii_paustovskyi:::
+balance_and_home_service_confirm:::
+[abort]:::
+():::
+нет:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На какой день вы желаете вызвать мастера?'}}]:::
+==========================
+20210415170131:::
+yurii_paustovskyi:::
+balance_and_home_service_day:::
+[abort]:::
+():::
+нет:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Понятно. Чем еще мы можем вам помочь?'}}]:::
+==========================
+20210415170143:::
+yurii_paustovskyi:::
+welcome:::
+[greet]:::
+():::
+здравствуйте:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Да, Юрій, чем могу вам помочь?'}}]:::
+==========================
+20210415170145:::
+yurii_paustovskyi:::
+welcome:::
+[greet]:::
+():::
+ало:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Слушаю вас'}}]:::
+==========================
+20210415170151:::
+yurii_paustovskyi:::
+no_internet:::
+[no_internet]:::
+():::
+у меня не работает интернет:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Последняя оплата на ваш счет была произведена 2021-02-04 11:22:33 в размере 73 грн.Сейчас ваша задолженность составляет 1234 грн.Оплатите, пожалуйста, 1234 грн, чтоб восстановить услугу интернета.\n\n'}}]:::
+==========================
+20210415170202:::
+yurii_paustovskyi:::
+confirmation:::
+[confirmation]:::
+():::
+ок:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Чем именно я могу вам помочь?'}}]:::
+==========================
+20210415170213:::
+yurii_paustovskyi:::
+get_credit:::
+[get_credit]:::
+():::
+я хочу кредит доверия:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Услуга "Кредит доверия" уже подключена. Чем еще можем вам помочь?'}}]:::
+==========================
+20210415170300:::
+yurii_paustovskyi:::
+clarify:::
+[clarify]:::
+():::
+а чем можете?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Чем именно я могу вам помочь?'}}]:::
+==========================
+20210415170315:::
+yurii_paustovskyi:::
+competence:::
+[competence]:::
+():::
+чем вы можете помочь?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Я могу помочь вам с такими вопросами:\n- проверить баланс\n- вызов мастера на дом\n- изменение тарифного плана\n- описание вашего тарифного плана\n- услуга "Кредит доверия"\n- проверка проблем с работой интернета.'}}]:::
+==========================
+20210415170413:::
+yurii_paustovskyi:::
+check_balance:::
+[check_balance]:::
+():::
+Какой у меня баланс сейчас?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Ваш баланс: -1234'}}]:::
+==========================
+20210415170417:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+Ого:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415170433:::
+yurii_paustovskyi:::
+service_plan_description:::
+[service_plan_description]:::
+():::
+А можно изменить тарифный план?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Ваш тарифный план: Смидл Спорт HD Pro +100.\n- Интернет до 100\nМбит/с\n- Более 70\nканалов\n- 10 HD каналов\n- Дополнительная услуга Смидл\nФутбол+:\nпрямые\nтрансляции всех\nматчей Лиги\nЧемпионов и Лиги \nЕвропы UEFA\nСтоимость составляет 319 гривень в месяц.'}}]:::
+==========================
+20210415170451:::
+yurii_paustovskyi:::
+change_service_plan:::
+[change_service_plan]:::
+():::
+Можно изменить тарифный план?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сейчас ваш тарифный план: Смидл Спорт HD Pro +100. На какой тарифный план вы хотите перейти?'}}]:::
+==========================
+20210415170510:::
+yurii_paustovskyi:::
+change_service_plan_selection:::
+[clarify]:::
+():::
+А какие есть?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': '- Смидл Спорт HD Pro +100\n- Смидл Power Time Pro +200\n- Premium HD +200'}}]:::
+==========================
+20210415170520:::
+yurii_paustovskyi:::
+change_service_plan_selection:::
+[clarify]:::
+():::
+А какие условия?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Смидл Спорт HD Pro +100\n- Интернет до 100 Мбит/с\n- Более 70 каналов\n- 10 HD каналов\n- Дополнительная услуга Смидл Футбол+: прямые трансляции всех матчей Лиги Чемпионов и Лиги Европы UEFA'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'Смидл Power Time Pro +200\n- Интернет до 200 Мбит/с\n- Более чем 140 каналов\n- Дополнительная услуга Смидл Футбол+: прямые трансляции всех матчей Лиги Чемпионов и Лиги Европы UEFA'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'Premium HD +200\n- Интернет до 200 Мбит/с\n- Более чем 160 каналов\n- Дополнительная услуга Смидл Футбол+: прямые трансляции всех матчей Лиги Чемпионов и Лиги Европи UEFA\n- оборудование в количестве 5 шт. включено'}}]:::
+==========================
+20210415170529:::
+yurii_paustovskyi:::
+change_service_plan_selection:::
+[confirmation]:::
+():::
+Супер:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сейчас ваш тарифний план Смидл Спорт HD Pro +100. На какой тарифный план вы хотите перейти?'}}]:::
+==========================
+20210415170534:::
+yurii_paustovskyi:::
+change_service_plan_selection:::
+[greet]:::
+():::
+Премиум:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сейчас ваш тарифний план Смидл Спорт HD Pro +100. На какой тарифный план вы хотите перейти?'}}]:::
+==========================
+20210415170542:::
+yurii_paustovskyi:::
+change_service_plan_selection:::
+[specify_service_plan]:::
+(immutables.Map({'text': 'Премиум HD', 'value': [{'cname': 'Premium HD +200', 'score': 34.59926, 'top_synonym': 'Премиум HD', 'id': '4'}, {'cname': 'Смидл Smart HD +100', 'score': 1.5032656, 'top_synonym': 'Смидл Smart HD +100', 'id': '2'}, {'cname': 'Смидл Спорт HD Pro +100', 'score': 1.4404079, 'top_synonym': 'Смидл Спорт HD Pro +100', 'id': '1'}], 'type': 'service_plan', 'role': None, 'span': {'start': 0, 'end': 9}}),):::
+Премиум HD:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите изменить ваш тарифный план с Смидл Спорт HD Pro +100 на Premium HD +200?'}}]:::
+==========================
+20210415170546:::
+yurii_paustovskyi:::
+change_service_plan_confirm:::
+[confirmation]:::
+():::
+Да:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Стоимость нового тарифного плана составит 459. Вы подтверждаете переход на тарифный план Premium HD +200?'}}]:::
+==========================
+20210415170553:::
+yurii_paustovskyi:::
+change_service_plan_changed:::
+[confirmation]:::
+():::
+Дорого:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Ваш тарифный план изменен. Чем еще мы можем вам помочь? '}}]:::
+==========================
+20210415170620:::
+yurii_paustovskyi:::
+balance_and_home_service:::
+[home_service]:::
+(immutables.Map({'text': "п'ятницю", 'value': [{'value': '2021-04-16T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-16T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-23T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-30T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'type': 'sys_time', 'role': 'day', 'span': {'start': 25, 'end': 32}}),):::
+Можно вызвать мастера на п'ятницю?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На который час вы желаете вызвать мастера?'}}]:::
+==========================
+20210415170620:::
+yurii_paustovskyi:::
+home_service:::
+[home_service]:::
+(immutables.Map({'text': "п'ятницю", 'value': [{'value': '2021-04-16T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-16T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-23T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-30T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'type': 'sys_time', 'role': 'day', 'span': {'start': 25, 'end': 32}}),):::
+Можно вызвать мастера на п'ятницю?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На который час вы желаете вызвать мастера?'}}]:::
+==========================
+20210415170635:::
+yurii_paustovskyi:::
+balance_and_home_service_hour:::
+[specify_hour]:::
+(immutables.Map({'text': '13:00', 'value': [{'value': '2021-04-15T13:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T13:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-16T13:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T13:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'type': 'sys_time', 'role': 'hour', 'span': {'start': 3, 'end': 7}}),):::
+На 13:00:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите вызвать мастера на 2021-04-16 13:00?'}}]:::
+==========================
+20210415170639:::
+yurii_paustovskyi:::
+balance_and_home_service_confirm:::
+[confirmation]:::
+():::
+Да:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Заявку на вызов мастера на 2021-04-16 13:00 создано.\nОжидайте звонка от мастера.'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'Чем еще можем вам помочь?'}}]:::
+==========================
+20210415170658:::
+yurii_paustovskyi:::
+balance_and_home_service_hour:::
+[home_service]:::
+(immutables.Map({'text': '20 квітня', 'value': [{'value': '2021-04-20T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-20T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2022-04-20T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2023-04-20T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'type': 'sys_time', 'role': 'day', 'span': {'start': 24, 'end': 32}}), immutables.Map({'text': '14:00', 'value': [{'value': '2021-04-15T14:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T14:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-16T14:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T14:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'type': 'sys_time', 'role': 'hour', 'span': {'start': 37, 'end': 41}})):::
+Хочу вызвать мастера на 20 квітня на 14:00:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите вызвать мастера на 2021-04-20 14:00?'}}]:::
+==========================
+20210415170658:::
+yurii_paustovskyi:::
+balance_and_home_service:::
+[home_service]:::
+(immutables.Map({'text': '20 квітня', 'value': [{'value': '2021-04-20T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-20T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2022-04-20T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2023-04-20T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'type': 'sys_time', 'role': 'day', 'span': {'start': 24, 'end': 32}}), immutables.Map({'text': '14:00', 'value': [{'value': '2021-04-15T14:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T14:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-16T14:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T14:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'type': 'sys_time', 'role': 'hour', 'span': {'start': 37, 'end': 41}})):::
+Хочу вызвать мастера на 20 квітня на 14:00:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите вызвать мастера на 2021-04-20 14:00?'}}]:::
+==========================
+20210415170658:::
+yurii_paustovskyi:::
+home_service:::
+[home_service]:::
+(immutables.Map({'text': '20 квітня', 'value': [{'value': '2021-04-20T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-20T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2022-04-20T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2023-04-20T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'type': 'sys_time', 'role': 'day', 'span': {'start': 24, 'end': 32}}), immutables.Map({'text': '14:00', 'value': [{'value': '2021-04-15T14:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T14:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-16T14:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T14:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'type': 'sys_time', 'role': 'hour', 'span': {'start': 37, 'end': 41}})):::
+Хочу вызвать мастера на 20 квітня на 14:00:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите вызвать мастера на 2021-04-20 14:00?'}}]:::
+==========================
+20210415170703:::
+yurii_paustovskyi:::
+balance_and_home_service_confirm:::
+[confirmation]:::
+():::
+Да:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Заявку на вызов мастера на 2021-04-20 14:00 создано.\nОжидайте звонка от мастера.'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'Чем еще можем вам помочь?'}}]:::
+==========================
+20210415170713:::
+yurii_paustovskyi:::
+thanks:::
+[thanks]:::
+():::
+Ничем, спасибо:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Всегда рада помочь.'}}]:::
+==========================
+20210415170722:::
+yurii_paustovskyi:::
+competence:::
+[competence]:::
+():::
+А ты бот?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Я могу помочь вам с такими вопросами:\n- проверить баланс\n- вызов мастера на дом\n- изменение тарифного плана\n- описание вашего тарифного плана\n- услуга "Кредит доверия"\n- проверка проблем с работой интернета.'}}]:::
+==========================
+20210415170729:::
+yurii_paustovskyi:::
+competence:::
+[competence]:::
+():::
+А кто ты?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Я могу помочь вам с такими вопросами:\n- проверить баланс\n- вызов мастера на дом\n- изменение тарифного плана\n- описание вашего тарифного плана\n- услуга "Кредит доверия"\n- проверка проблем с работой интернета.'}}]:::
+==========================
+20210415170733:::
+yurii_paustovskyi:::
+competence:::
+[competence]:::
+():::
+Кто ты:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Я могу помочь вам с такими вопросами:\n- проверить баланс\n- вызов мастера на дом\n- изменение тарифного плана\n- описание вашего тарифного плана\n- услуга "Кредит доверия"\n- проверка проблем с работой интернета.'}}]:::
+==========================
+20210415170738:::
+yurii_paustovskyi:::
+small_talk:::
+[small_talk]:::
+():::
+Ты девушка?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Я бы с удовольствием с вами пообщалась, но могу помочь только с услугами компании "Смидл".'}}]:::
+==========================
+20210415170745:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+Понятно:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415171147:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+какие?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415171156:::
+yurii_paustovskyi:::
+small_talk:::
+[small_talk]:::
+():::
+какие проблемы але?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Я могу помочь вам с такими вопросами:\n- проверить баланс\n- вызов мастера на дом\n- изменение тарифного плана\n- описание вашего тарифного плана\n- услуга "Кредит доверия"\n- проверка проблем с работой интернета.'}}]:::
+==========================
+20210415171219:::
+yurii_paustovskyi:::
+service_plan_description:::
+[service_plan_description]:::
+():::
+а какой у меня пакет:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Ваш тарифный план: Смидл Спорт HD Pro +100.\n- Интернет до 100\nМбит/с\n- Более 70\nканалов\n- 10 HD каналов\n- Дополнительная услуга Смидл\nФутбол+:\nпрямые\nтрансляции всех\nматчей Лиги\nЧемпионов и Лиги \nЕвропы UEFA\nСтоимость составляет 319 гривень в месяц.'}}]:::
+==========================
+20210415171226:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+а можно его изменить?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415171231:::
+yurii_paustovskyi:::
+change_service_plan:::
+[change_service_plan]:::
+():::
+можно поменять пакет?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сейчас ваш тарифный план: Смидл Спорт HD Pro +100. На какой тарифный план вы хотите перейти?'}}]:::
+==========================
+20210415171237:::
+yurii_paustovskyi:::
+change_service_plan_selection:::
+[clarify]:::
+():::
+а какие есть?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': '- Смидл Спорт HD Pro +100\n- Смидл Power Time Pro +200\n- Premium HD +200'}}]:::
+==========================
+20210415171317:::
+yurii_paustovskyi:::
+change_service_plan_selection:::
+[change_service_plan]:::
+(immutables.Map({'text': 'Смидл Спорт HD', 'value': [{'cname': 'Смидл Спорт HD Pro +100', 'score': 9.574816, 'top_synonym': 'Смидл Спорт HD Pro +100', 'id': '1'}, {'cname': 'Смидл Smart HD +100', 'score': 2.70778, 'top_synonym': 'Смидл Smart HD +100', 'id': '2'}, {'cname': 'Premium HD +200', 'score': 1.6470132, 'top_synonym': 'Премиум HD', 'id': '4'}, {'cname': 'Смидл Power Time Pro +200', 'score': 1.1571999, 'top_synonym': 'Смидл Pauer Time pro', 'id': '3'}], 'type': 'service_plan', 'role': None, 'span': {'start': 18, 'end': 31}}),):::
+а какие условия у Смидл Спорт HD?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Юрій, ожидайте соединения, пожалуйста.'}}]:::
+==========================
+20210415171430:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+yt [jxe:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415171434:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+не хочу:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415171439:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+хмммм:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415171451:::
+yurii_paustovskyi:::
+competence:::
+[competence]:::
+():::
+а с чем ты можешь помочь?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Я могу помочь вам с такими вопросами:\n- проверить баланс\n- вызов мастера на дом\n- изменение тарифного плана\n- описание вашего тарифного плана\n- услуга "Кредит доверия"\n- проверка проблем с работой интернета.'}}]:::
+==========================
+20210415171502:::
+yurii_paustovskyi:::
+balance_and_home_service:::
+[home_service]:::
+():::
+давай вызовем мастера на дом:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы желаете оставить заявку на вызов мастера домой?'}}]:::
+==========================
+20210415171502:::
+yurii_paustovskyi:::
+home_service:::
+[home_service]:::
+():::
+давай вызовем мастера на дом:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы желаете оставить заявку на вызов мастера домой?'}}]:::
+==========================
+20210415171504:::
+yurii_paustovskyi:::
+balance_and_home_service:::
+[confirmation]:::
+():::
+да:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На какой день вы желаете вызвать мастера?'}}]:::
+==========================
+20210415171514:::
+yurii_paustovskyi:::
+balance_and_home_service_day:::
+[small_talk]:::
+():::
+а на когда можно?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Повторите, пожалуйста, на какой день вы желаете вызвать мастера? Вы можете выбрать день начиная с завтра до 2021-04-25'}}]:::
+==========================
+20210415171521:::
+yurii_paustovskyi:::
+balance_and_home_service_day:::
+[home_service]:::
+(immutables.Map({'text': 'завтра', 'value': [{'value': '2021-04-16T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-16T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'type': 'sys_time', 'role': 'day', 'span': {'start': 0, 'end': 5}}),):::
+завтра:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На который час вы желаете вызвать мастера?'}}]:::
+==========================
+20210415171525:::
+yurii_paustovskyi:::
+balance_and_home_service_hour:::
+[home_service]:::
+(immutables.Map({'text': 'завтра', 'value': [{'value': '2021-04-16T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-16T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'type': 'sys_time', 'role': 'day', 'span': {'start': 3, 'end': 8}}),):::
+на завтра:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Повторите, пожалуйста, на который час вы желаете вызвать мастера? Например: 17:00'}}]:::
+==========================
+20210415171547:::
+yurii_paustovskyi:::
+balance_and_home_service_hour:::
+[specify_hour]:::
+(immutables.Map({'text': '14:20', 'value': [{'value': '2021-04-15T14:20:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T14:20:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-16T14:20:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T14:20:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'type': 'sys_time', 'role': 'hour', 'span': {'start': 3, 'end': 7}}),):::
+на 14:20:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите вызвать мастера на 2021-04-16 14:20?'}}]:::
+==========================
+20210415171549:::
+yurii_paustovskyi:::
+balance_and_home_service_confirm:::
+[confirmation]:::
+():::
+да:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Заявку на вызов мастера на 2021-04-16 14:20 создано.\nОжидайте звонка от мастера.'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'Чем еще можем вам помочь?'}}]:::
+==========================
+20210415174001:::
+yurii_paustovskyi:::
+welcome:::
+[greet]:::
+():::
+здравствуйте:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Слушаю вас'}}]:::
+==========================
+20210415174010:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+\xtart:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415174938:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+п:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415174938:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+п:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415174938:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+п:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415174939:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+п:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415174939:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+п:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415174939:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+п:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415174939:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+п:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415174940:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+п:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415174940:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+п:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415174940:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+п:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415174940:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+п:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415174941:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+п:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415174941:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+п:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415174941:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+п:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415174941:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+п:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415175027:::
+yurii_paustovskyi:::
+default:::
+[verification]:::
+():::
+в:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Прошу прощения?'}}]:::
+==========================
+20210415175050:::
+yurii_paustovskyi:::
+welcome:::
+[greet]:::
+():::
+привет:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Слушаю вас'}}]:::
+==========================
+20210415175103:::
+yurii_paustovskyi:::
+default:::
+[repeat]:::
+():::
+слушаешь внимательно?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Прошу прощения?'}}]:::
+==========================
+20210415175113:::
+yurii_paustovskyi:::
+small_talk:::
+[small_talk]:::
+():::
+какое прощение?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'К сожалению, я не смогу ответить на это.'}}]:::
+==========================
+20210415175125:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+почему?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415175133:::
+yurii_paustovskyi:::
+confirmation:::
+[confirmation]:::
+():::
+так есть проблема:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Чем именно я могу вам помочь?'}}]:::
+==========================
+20210415175152:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+Что то хочу но не знаю что:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415175158:::
+yurii_paustovskyi:::
+confirmation:::
+[confirmation]:::
+():::
+давай так:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сформулируйте, пожалуйста, ваш запрос.'}}]:::
+==========================
+20210415175212:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+ну вот вообще нет связи с миром:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415175222:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+нет связи:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415175237:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+у меня нету связи дома:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415175250:::
+yurii_paustovskyi:::
+no_internet:::
+[no_internet]:::
+():::
+у меня нету интернета:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Последняя оплата на ваш счет была произведена 2021-02-04 11:22:33 в размере 73 грн.Сейчас ваша задолженность составляет 1234 грн.Оплатите, пожалуйста, 1234 грн, чтоб восстановить услугу интернета.\n\n'}}]:::
+==========================
+20210415175322:::
+yurii_paustovskyi:::
+no_internet:::
+[no_internet]:::
+():::
+я немогу понять связь и интернет это одно и тоже:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Последняя оплата на ваш счет была произведена 2021-02-04 11:22:33 в размере 73 грн.Сейчас ваша задолженность составляет 1234 грн.Оплатите, пожалуйста, 1234 грн, чтоб восстановить услугу интернета.\n\n'}}]:::
+==========================
+20210415175351:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+и:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415175400:::
+yurii_paustovskyi:::
+confirmation:::
+[confirmation]:::
+():::
+что дальше?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Чем именно я могу вам помочь?'}}]:::
+==========================
+20210415175419:::
+yurii_paustovskyi:::
+no_internet:::
+[no_internet]:::
+():::
+хорошо что у меня есть дома интернет:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Последняя оплата на ваш счет была произведена 2021-02-04 11:22:33 в размере 73 грн.Сейчас ваша задолженность составляет 1234 грн.Оплатите, пожалуйста, 1234 грн, чтоб восстановить услугу интернета.\n\n'}}]:::
+==========================
+20210415175511:::
+yurii_paustovskyi:::
+clarify:::
+[clarify]:::
+():::
+в каком месяце у меня долг образовался?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Что именно вас интересует?'}}]:::
+==========================
+20210415175518:::
+yurii_paustovskyi:::
+small_talk:::
+[small_talk]:::
+():::
+уменя долг:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Я понимаю, что вам интересно со мной поиграть, но я не лучший собеседник, если дело не касается услуг компании "Смидл"'}}]:::
+==========================
+20210415175533:::
+yurii_paustovskyi:::
+small_talk:::
+[small_talk]:::
+():::
+у меня ДОЛГ!!!!:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Что ж, если будут вопросы по услугам компании "Смидл" - обращайтесь.'}}]:::
+==========================
+20210415175558:::
+yurii_paustovskyi:::
+change_service_plan:::
+[change_service_plan]:::
+():::
+У меня долг как мне заплатить?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сейчас ваш тарифный план: Смидл Спорт HD Pro +100. На какой тарифный план вы хотите перейти?'}}]:::
+==========================
+20210415175627:::
+yurii_paustovskyi:::
+change_service_plan_selection:::
+[clarify]:::
+():::
+я не хочу переходить меня все устраивает:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Смидл Спорт HD Pro +100\n- Интернет до 100 Мбит/с\n- Более 70 каналов\n- 10 HD каналов\n- Дополнительная услуга Смидл Футбол+: прямые трансляции всех матчей Лиги Чемпионов и Лиги Европы UEFA'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'Смидл Power Time Pro +200\n- Интернет до 200 Мбит/с\n- Более чем 140 каналов\n- Дополнительная услуга Смидл Футбол+: прямые трансляции всех матчей Лиги Чемпионов и Лиги Европы UEFA'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'Premium HD +200\n- Интернет до 200 Мбит/с\n- Более чем 160 каналов\n- Дополнительная услуга Смидл Футбол+: прямые трансляции всех матчей Лиги Чемпионов и Лиги Европи UEFA\n- оборудование в количестве 5 шт. включено'}}]:::
+==========================
+20210415175642:::
+yurii_paustovskyi:::
+change_service_plan_selection:::
+[abort]:::
+():::
+зачем мне это?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Понятно. Чем еще мы можем вам помочь?'}}]:::
+==========================
+20210415175712:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+вчора не работал телевизор:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415175727:::
+yurii_paustovskyi:::
+competence:::
+[competence]:::
+():::
+Что ты умеешь:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Я могу помочь вам с такими вопросами:\n- проверить баланс\n- вызов мастера на дом\n- изменение тарифного плана\n- описание вашего тарифного плана\n- услуга "Кредит доверия"\n- проверка проблем с работой интернета.'}}]:::
+==========================
+20210415175810:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+мне нада праверить роботаит ли у миня интернет:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415175833:::
+yurii_paustovskyi:::
+no_internet:::
+[no_internet]:::
+():::
+мне надо проверить работает ли правильно интернет:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Последняя оплата на ваш счет была произведена 2021-02-04 11:22:33 в размере 73 грн.Сейчас ваша задолженность составляет 1234 грн.Оплатите, пожалуйста, 1234 грн, чтоб восстановить услугу интернета.\n\n'}}]:::
+==========================
+20210415175901:::
+yurii_paustovskyi:::
+small_talk:::
+[small_talk]:::
+():::
+как лучше это сделать:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Я бы с удовольствием с вами пообщалась, но могу помочь только с услугами компании "Смидл".'}}]:::
+==========================
+20210415175929:::
+yurii_paustovskyi:::
+small_talk:::
+[small_talk]:::
+():::
+где у вас офис?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Я могу помочь вам с такими вопросами:\n- проверить баланс\n- вызов мастера на дом\n- изменение тарифного плана\n- описание вашего тарифного плана\n- услуга "Кредит доверия"\n- проверка проблем с работой интернета.'}}]:::
+==========================
+20210415175954:::
+yurii_paustovskyi:::
+no_internet:::
+[no_internet]:::
+():::
+у меня законсились деньга для интернета:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Последняя оплата на ваш счет была произведена 2021-02-04 11:22:33 в размере 73 грн.Сейчас ваша задолженность составляет 1234 грн.Оплатите, пожалуйста, 1234 грн, чтоб восстановить услугу интернета.\n\n'}}]:::
+==========================
+20210415180004:::
+yurii_paustovskyi:::
+get_credit:::
+[get_credit]:::
+():::
+как взять кредит:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Услуга "Кредит доверия" уже подключена. Чем еще можем вам помочь?'}}]:::
+==========================
+20210415180016:::
+yurii_paustovskyi:::
+get_credit:::
+[get_credit]:::
+():::
+я могу как то взять в кредит:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Услуга "Кредит доверия" уже подключена. Чем еще можем вам помочь?'}}]:::
+==========================
+20210415180030:::
+yurii_paustovskyi:::
+get_credit:::
+[get_credit]:::
+():::
+а на сколько можно взять кредит:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Услуга "Кредит доверия" уже подключена. Чем еще можем вам помочь?'}}]:::
+==========================
+20210415180129:::
+yurii_paustovskyi:::
+small_talk:::
+[small_talk]:::
+():::
+у меня поломка дома:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'К сожалению, я не смогу ответить на это.'}}]:::
+==========================
+20210415180147:::
+yurii_paustovskyi:::
+small_talk:::
+[small_talk]:::
+():::
+нужно заказать техника:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Я понимаю, что вам интересно со мной поиграть, но я не лучший собеседник, если дело не касается услуг компании "Смидл"'}}]:::
+==========================
+20210415180205:::
+yurii_paustovskyi:::
+balance_and_home_service:::
+[home_service]:::
+():::
+а мастера можно заказать?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы желаете оставить заявку на вызов мастера домой?'}}]:::
+==========================
+20210415180205:::
+yurii_paustovskyi:::
+home_service:::
+[home_service]:::
+():::
+а мастера можно заказать?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы желаете оставить заявку на вызов мастера домой?'}}]:::
+==========================
+20210415180209:::
+yurii_paustovskyi:::
+balance_and_home_service:::
+[confirmation]:::
+():::
+ага:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На какой день вы желаете вызвать мастера?'}}]:::
+==========================
+20210415180222:::
+yurii_paustovskyi:::
+balance_and_home_service_day:::
+[specify_day]:::
+(immutables.Map({'text': 'суботу', 'value': [{'value': '2021-04-17T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-17T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-24T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-05-01T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'type': 'sys_time', 'role': 'day', 'span': {'start': 3, 'end': 8}}),):::
+на суботу:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На который час вы желаете вызвать мастера?'}}]:::
+==========================
+20210415180300:::
+yurii_paustovskyi:::
+balance_and_home_service_hour:::
+[specify_hour]:::
+(immutables.Map({'text': '14:30', 'value': [{'value': '2021-04-15T14:30:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T14:30:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-16T14:30:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T14:30:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'type': 'sys_time', 'role': 'hour', 'span': {'start': 3, 'end': 7}}),):::
+на 14:30:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите вызвать мастера на 2021-04-17 14:30?'}}]:::
+==========================
+20210415180311:::
+yurii_paustovskyi:::
+balance_and_home_service_confirm:::
+[abort]:::
+():::
+именно:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На какой день вы желаете вызвать мастера?'}}]:::
+==========================
+20210415180330:::
+yurii_paustovskyi:::
+balance_and_home_service_day:::
+[confirmation]:::
+():::
+я говорю да:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На который час вы желаете вызвать мастера?'}}]:::
+==========================
+20210415180342:::
+yurii_paustovskyi:::
+balance_and_home_service_hour:::
+[specify_hour]:::
+(immutables.Map({'text': '14:30', 'value': [{'value': '2021-04-15T14:30:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T14:30:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-16T14:30:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T14:30:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'type': 'sys_time', 'role': 'hour', 'span': {'start': 0, 'end': 4}}),):::
+14:30:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите вызвать мастера на 2021-04-17 14:30?'}}]:::
+==========================
+20210415180345:::
+yurii_paustovskyi:::
+balance_and_home_service_confirm:::
+[confirmation]:::
+():::
+да:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Заявку на вызов мастера на 2021-04-17 14:30 создано.\nОжидайте звонка от мастера.'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'Чем еще можем вам помочь?'}}]:::
+==========================
+20210415180356:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+это всё:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210415180400:::
+yurii_paustovskyi:::
+thanks:::
+[thanks]:::
+():::
+спасибо:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Пожалуйста.'}}]:::
+==========================
+20210415180406:::
+yurii_paustovskyi:::
+goodbye:::
+[goodbye]:::
+():::
+пока:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На связи!'}}]:::
+==========================
+20210415180418:::
+yurii_paustovskyi:::
+small_talk:::
+[small_talk]:::
+():::
+может випьем кофе?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Что ж, если будут вопросы по услугам компании "Смидл" - обращайтесь.'}}]:::
+==========================

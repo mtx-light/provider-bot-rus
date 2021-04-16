@@ -1,0 +1,944 @@
+20210416131134:::
+heleon_chimp:::
+change_service_plan:::
+[change_service_plan]:::
+():::
+Хочу тариф другой:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сначала пройдите верификацию. Введите 8 цифр вашего договора.'}}]:::
+==========================
+20210416131218:::
+heleon_chimp:::
+verify_service_number:::
+[verification]:::
+(immutables.Map({'value': [{'value': 77711122}], 'role': 'service_number', 'type': 'sys_number', 'span': {'start': 0, 'end': 7}, 'text': '77711122'}),):::
+77711122:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Введите номер вашего дома.'}}]:::
+==========================
+20210416131220:::
+heleon_chimp:::
+change_service_plan:::
+[verification]:::
+(immutables.Map({'value': [{'value': 11}], 'role': 'house_number', 'type': 'sys_number', 'span': {'start': 0, 'end': 1}, 'text': '11'}),):::
+11:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сейчас ваш тарифный план: Смидл Спорт HD Pro +100. На какой тарифный план вы хотите перейти?'}}]:::
+==========================
+20210416131220:::
+heleon_chimp:::
+verify_house_number:::
+[verification]:::
+(immutables.Map({'value': [{'value': 11}], 'role': 'house_number', 'type': 'sys_number', 'span': {'start': 0, 'end': 1}, 'text': '11'}),):::
+11:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сейчас ваш тарифный план: Смидл Спорт HD Pro +100. На какой тарифный план вы хотите перейти?'}}]:::
+==========================
+20210416131227:::
+heleon_chimp:::
+change_service_plan_selection:::
+[abort]:::
+():::
+Павер Тайм:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Понятно. Чем еще мы можем вам помочь?'}}]:::
+==========================
+20210416131231:::
+heleon_chimp:::
+change_service_plan:::
+[change_service_plan]:::
+():::
+Поменять тариф:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сейчас ваш тарифный план: Смидл Спорт HD Pro +100. На какой тарифный план вы хотите перейти?'}}]:::
+==========================
+20210416131243:::
+heleon_chimp:::
+change_service_plan_selection:::
+[confirmation]:::
+():::
+Пауэр Тайм:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сейчас ваш тарифний план Смидл Спорт HD Pro +100. На какой тарифный план вы хотите перейти?'}}]:::
+==========================
+20210416131257:::
+heleon_chimp:::
+change_service_plan_selection:::
+[specify_service_plan]:::
+(immutables.Map({'value': [{'cname': 'Смидл Power Time Pro +200', 'score': 10.725126, 'top_synonym': 'Смидл Пауер Тайм про двести', 'id': '3'}, {'cname': 'Смидл Smart HD +100', 'score': 1.2045143, 'top_synonym': 'Смидл Smart HD +100', 'id': '2'}, {'cname': 'Смидл Спорт HD Pro +100', 'score': 1.1744891, 'top_synonym': 'Смидл Спорт Аш Ди сто', 'id': '1'}, {'cname': 'Premium HD +200', 'score': 0.54916185, 'top_synonym': 'Смидл Премиум Аш Ди двести', 'id': '4'}], 'role': None, 'type': 'service_plan', 'span': {'start': 3, 'end': 18}, 'text': 'Смидл Пауэр Тайм'}),):::
+На Смидл Пауэр Тайм:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите изменить ваш тарифный план с Смидл Спорт HD Pro +100 на Смидл Power Time Pro +200?'}}]:::
+==========================
+20210416131306:::
+heleon_chimp:::
+change_service_plan_confirm:::
+[confirmation]:::
+():::
+Да:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Стоимость нового тарифного плана составит 399. Вы подтверждаете переход на тарифный план Смидл Power Time Pro +200?'}}]:::
+==========================
+20210416131326:::
+heleon_chimp:::
+change_service_plan_changed:::
+[abort]:::
+():::
+Нет:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Понятно. Чем еще мы можем вам помочь?'}}]:::
+==========================
+20210416131415:::
+heleon_chimp:::
+balance_and_home_service:::
+[home_service]:::
+():::
+Вызвать мастера:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы желаете оставить заявку на вызов мастера домой?'}}]:::
+==========================
+20210416131415:::
+heleon_chimp:::
+home_service:::
+[home_service]:::
+():::
+Вызвать мастера:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы желаете оставить заявку на вызов мастера домой?'}}]:::
+==========================
+20210416131420:::
+heleon_chimp:::
+balance_and_home_service:::
+[confirmation]:::
+():::
+Да:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На какой день вы желаете вызвать мастера?'}}]:::
+==========================
+20210416131426:::
+heleon_chimp:::
+balance_and_home_service_day:::
+[specify_day]:::
+(immutables.Map({'value': [{'value': '2021-04-19T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-19T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-26T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-05-03T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'role': 'day', 'type': 'sys_time', 'span': {'start': 3, 'end': 11}, 'text': 'понеділок'}),):::
+На понеділок:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На который час вы желаете вызвать мастера?'}}]:::
+==========================
+20210416131446:::
+heleon_chimp:::
+balance_and_home_service_hour:::
+[specify_hour]:::
+(immutables.Map({'value': [{'value': '2021-04-16T14:30:00.000-07:00', 'alternate_values': [{'value': '2021-04-16T14:30:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T14:30:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-18T14:30:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'role': 'hour', 'type': 'sys_time', 'span': {'start': 0, 'end': 4}, 'text': '14:30'}),):::
+14:30:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите вызвать мастера на 2021-04-19 14:30?'}}]:::
+==========================
+20210416131517:::
+heleon_chimp:::
+balance_and_home_service_confirm:::
+[abort]:::
+():::
+не хочу:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На какой день вы желаете вызвать мастера?'}}]:::
+==========================
+20210416131612:::
+heleon_chimp:::
+balance_and_home_service_day:::
+[specify_day]:::
+(immutables.Map({'value': [{'value': '2021-04-20T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-20T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-27T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-05-04T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'role': 'day', 'type': 'sys_time', 'span': {'start': 3, 'end': 10}, 'text': 'вівторок'}),):::
+На вівторок:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На который час вы желаете вызвать мастера?'}}]:::
+==========================
+20210416131632:::
+heleon_chimp:::
+balance_and_home_service_hour:::
+[specify_hour]:::
+(immutables.Map({'value': [{'value': '2021-04-16T16:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-16T16:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T16:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-18T16:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'role': 'hour', 'type': 'sys_time', 'span': {'start': 3, 'end': 7}, 'text': '16:00'}),):::
+на 16:00:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите вызвать мастера на 2021-04-19 14:30?'}}]:::
+==========================
+20210416131706:::
+heleon_chimp:::
+balance_and_home_service_confirm:::
+[confirmation]:::
+():::
+Хочу:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Заявку на вызов мастера на 2021-04-19 14:30 создано.\nОжидайте звонка от мастера.'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'Чем еще можем вам помочь?'}}]:::
+==========================
+20210416131759:::
+heleon_chimp:::
+small_talk:::
+[small_talk]:::
+():::
+Нужен мастер:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Я бы с удовольствием с вами пообщалась, но могу помочь только с услугами компании "Смидл".'}}]:::
+==========================
+20210416131809:::
+heleon_chimp:::
+small_talk:::
+[small_talk]:::
+():::
+Нужен техник:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Я могу помочь вам с такими вопросами:\n- проверить баланс\n- вызов мастера на дом\n- изменение тарифного плана\n- описание вашего тарифного плана\n- услуга "Кредит доверия"\n- проверка проблем с работой интернета.'}}]:::
+==========================
+20210416131849:::
+heleon_chimp:::
+small_talk:::
+[small_talk]:::
+():::
+Вызвать техника:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'К сожалению, я не смогу ответить на это.'}}]:::
+==========================
+20210416131857:::
+heleon_chimp:::
+balance_and_home_service:::
+[home_service]:::
+():::
+Вызвать мастера:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы желаете оставить заявку на вызов мастера домой?'}}]:::
+==========================
+20210416131857:::
+heleon_chimp:::
+home_service:::
+[home_service]:::
+():::
+Вызвать мастера:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы желаете оставить заявку на вызов мастера домой?'}}]:::
+==========================
+20210416131919:::
+heleon_chimp:::
+balance_and_home_service:::
+[abort]:::
+():::
+Я передумал:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Понятно. Чем еще мы можем вам помочь?'}}]:::
+==========================
+20210416132059:::
+heleon_chimp:::
+change_service_plan:::
+[change_service_plan]:::
+():::
+Поменять тариф:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сейчас ваш тарифный план: Смидл Спорт HD Pro +100. На какой тарифный план вы хотите перейти?'}}]:::
+==========================
+20210416132106:::
+heleon_chimp:::
+change_service_plan_selection:::
+[service_plan_description]:::
+():::
+А какие есть тарифы?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сейчас ваш тарифний план Смидл Спорт HD Pro +100. На какой тарифный план вы хотите перейти?'}}]:::
+==========================
+20210416132116:::
+heleon_chimp:::
+change_service_plan_selection:::
+[clarify]:::
+():::
+Какие еще есть?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': '- Смидл Спорт HD Pro +100 (319 грн)\n- Смидл Power Time Pro +200 (399 грн)\n- Premium HD +200 (459 грн)'}}]:::
+==========================
+20210416132146:::
+heleon_chimp:::
+change_service_plan_selection:::
+[service_plan_description]:::
+():::
+Изменить тариф:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Олена, ожидайте соединения, пожалуйста.'}}]:::
+==========================
+20210416132152:::
+heleon_chimp:::
+service_plan_description:::
+[service_plan_description]:::
+():::
+Изменить тариф:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Ваш тарифный план: Смидл Спорт HD Pro +100.\n- Интернет до 100\nМбит/с\n- Более 70\nканалов\n- 10 HD каналов\n- Дополнительная услуга Смидл\nФутбол+:\nпрямые\nтрансляции всех\nматчей Лиги\nЧемпионов и Лиги \nЕвропы UEFA\nСтоимость составляет 319 гривен в месяц.'}}]:::
+==========================
+20210416132207:::
+heleon_chimp:::
+change_service_plan:::
+[change_service_plan]:::
+():::
+Хочу поменять тариф:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сейчас ваш тарифный план: Смидл Спорт HD Pro +100. На какой тарифный план вы хотите перейти?'}}]:::
+==========================
+20210416132207:::
+heleon_chimp:::
+service_plan_description:::
+[change_service_plan]:::
+():::
+Хочу поменять тариф:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сейчас ваш тарифный план: Смидл Спорт HD Pro +100. На какой тарифный план вы хотите перейти?'}}]:::
+==========================
+20210416132209:::
+yurii_paustovskyi:::
+welcome:::
+[greet]:::
+():::
+Привет:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Приветствую, Юрій!'}}]:::
+==========================
+20210416132211:::
+heleon_chimp:::
+change_service_plan_selection:::
+[clarify]:::
+():::
+а какие есть?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Смидл Спорт HD Pro +100\n- Интернет до 100 Мбит/с\n- Более 70 каналов\n- 10 HD каналов\n- Дополнительная услуга Смидл Футбол+: прямые трансляции всех матчей Лиги Чемпионов и Лиги Европы UEFA'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'Смидл Power Time Pro +200\n- Интернет до 200 Мбит/с\n- Более чем 140 каналов\n- Дополнительная услуга Смидл Футбол+: прямые трансляции всех матчей Лиги Чемпионов и Лиги Европы UEFA'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'Premium HD +200\n- Интернет до 200 Мбит/с\n- Более чем 160 каналов\n- Дополнительная услуга Смидл Футбол+: прямые трансляции всех матчей Лиги Чемпионов и Лиги Европи UEFA\n- оборудование в количестве 5 шт. включено'}}]:::
+==========================
+20210416132224:::
+yurii_paustovskyi:::
+service_plan_description:::
+[service_plan_description]:::
+():::
+Какой у меня тариф:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Ваш тарифный план: Смидл Спорт HD Pro +100.\n- Интернет до 100\nМбит/с\n- Более 70\nканалов\n- 10 HD каналов\n- Дополнительная услуга Смидл\nФутбол+:\nпрямые\nтрансляции всех\nматчей Лиги\nЧемпионов и Лиги \nЕвропы UEFA\nСтоимость составляет 319 гривен в месяц.'}}]:::
+==========================
+20210416132234:::
+yurii_paustovskyi:::
+service_plan_description:::
+[abort]:::
+():::
+А можно изменить его?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Чем еще мы можем вам помочь?'}}]:::
+==========================
+20210416132246:::
+yurii_paustovskyi:::
+service_plan_description:::
+[service_plan_description]:::
+():::
+Какой у меня тариф:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Ваш тарифный план: Смидл Спорт HD Pro +100.\n- Интернет до 100\nМбит/с\n- Более 70\nканалов\n- 10 HD каналов\n- Дополнительная услуга Смидл\nФутбол+:\nпрямые\nтрансляции всех\nматчей Лиги\nЧемпионов и Лиги \nЕвропы UEFA\nСтоимость составляет 319 гривен в месяц.'}}]:::
+==========================
+20210416132252:::
+yurii_paustovskyi:::
+change_service_plan:::
+[change_service_plan]:::
+():::
+А можно изменить тарифный план?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сначала пройдите верификацию. Введите 8 цифр вашего договора.'}}]:::
+==========================
+20210416132252:::
+yurii_paustovskyi:::
+service_plan_description:::
+[change_service_plan]:::
+():::
+А можно изменить тарифный план?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сначала пройдите верификацию. Введите 8 цифр вашего договора.'}}]:::
+==========================
+20210416132300:::
+yurii_paustovskyi:::
+verify_service_number:::
+[verification]:::
+(immutables.Map({'value': [{'value': 87654321}], 'role': 'service_number', 'type': 'sys_number', 'span': {'start': 0, 'end': 7}, 'text': '87654321'}),):::
+87654321:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Введите номер вашего дома.'}}]:::
+==========================
+20210416132302:::
+yurii_paustovskyi:::
+change_service_plan:::
+[verification]:::
+(immutables.Map({'value': [{'value': 71}], 'role': 'house_number', 'type': 'sys_number', 'span': {'start': 0, 'end': 1}, 'text': '71'}),):::
+71:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сейчас ваш тарифный план: Смидл Спорт HD Pro +100. На какой тарифный план вы хотите перейти?'}}]:::
+==========================
+20210416132302:::
+yurii_paustovskyi:::
+verify_house_number:::
+[verification]:::
+(immutables.Map({'value': [{'value': 71}], 'role': 'house_number', 'type': 'sys_number', 'span': {'start': 0, 'end': 1}, 'text': '71'}),):::
+71:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сейчас ваш тарифный план: Смидл Спорт HD Pro +100. На какой тарифный план вы хотите перейти?'}}]:::
+==========================
+20210416132334:::
+heleon_chimp:::
+change_service_plan_selection:::
+[specify_service_plan]:::
+(immutables.Map({'value': [{'cname': 'Premium HD +200', 'score': 9.358415, 'top_synonym': 'Премиум Аш Ди 200', 'id': '4'}, {'cname': 'Смидл Спорт HD Pro +100', 'score': 3.1532745, 'top_synonym': 'Смидл Спорт Аш Ди сто', 'id': '1'}, {'cname': 'Смидл Smart HD +100', 'score': 3.1532745, 'top_synonym': 'Смидл Смарт Аш Ди сто', 'id': '2'}], 'role': None, 'type': 'service_plan', 'span': {'start': 0, 'end': 18}, 'text': 'Давай Премиум аш Ди'}),):::
+Давай Премиум аш Ди:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите изменить ваш тарифный план с Смидл Спорт HD Pro +100 на Premium HD +200?'}}]:::
+==========================
+20210416132411:::
+heleon_chimp:::
+change_service_plan_confirm:::
+[confirmation]:::
+():::
+Да, давайте:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Стоимость нового тарифного плана составит 459. Вы подтверждаете переход на тарифный план Premium HD +200?'}}]:::
+==========================
+20210416132530:::
+heleon_chimp:::
+change_service_plan_changed:::
+[confirmation]:::
+():::
+Подтверждаю:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Ваш тарифный план изменен. Чем еще мы можем вам помочь? '}}]:::
+==========================
+20210416132556:::
+heleon_chimp:::
+thanks:::
+[thanks]:::
+():::
+Спасибо:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Пожалуйста.'}}]:::
+==========================
+20210416132630:::
+heleon_chimp:::
+no_internet:::
+[no_internet]:::
+():::
+У меня не работает интернет:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Последняя оплата на ваш счет была произведена 2021-02-04 11:22:33 в размере 100 грн.Сейчас ваша задолженность составляет 100 грн.Оплатите, пожалуйста, 100 грн, чтоб восстановить услугу интернета.\n\n'}}]:::
+==========================
+20210416132635:::
+heleon_chimp:::
+default:::
+[repeat]:::
+():::
+Не понял:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Прошу прощения?'}}]:::
+==========================
+20210416132640:::
+heleon_chimp:::
+clarify:::
+[clarify]:::
+():::
+Не понимаю тебя:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сформулируйте, пожалуйста, ваш запрос.'}}]:::
+==========================
+20210416132646:::
+heleon_chimp:::
+default:::
+[repeat]:::
+():::
+Повтори еще раз:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Прошу прощения?'}}]:::
+==========================
+20210416132721:::
+heleon_chimp:::
+small_talk:::
+[small_talk]:::
+():::
+Вызов мастера:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Я понимаю, что вам интересно со мной поиграть, но я не лучший собеседник, если дело не касается услуг компании "Смидл"'}}]:::
+==========================
+20210416132727:::
+heleon_chimp:::
+clarify:::
+[clarify]:::
+():::
+Оформить вызов мастера:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сформулируйте, пожалуйста, ваш запрос.'}}]:::
+==========================
+20210416132734:::
+heleon_chimp:::
+balance_and_home_service:::
+[home_service]:::
+():::
+Хочу вызвать мастера:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы желаете оставить заявку на вызов мастера домой?'}}]:::
+==========================
+20210416132734:::
+heleon_chimp:::
+home_service:::
+[home_service]:::
+():::
+Хочу вызвать мастера:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы желаете оставить заявку на вызов мастера домой?'}}]:::
+==========================
+20210416132810:::
+heleon_chimp:::
+balance_and_home_service:::
+[confirmation]:::
+():::
+Да:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На какой день вы желаете вызвать мастера?'}}]:::
+==========================
+20210416132842:::
+heleon_chimp:::
+balance_and_home_service_day:::
+[repeat]:::
+():::
+Что?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Повторите, пожалуйста, на какой день вы желаете вызвать мастера? Вы можете выбрать день начиная с завтра до 2021-04-26'}}]:::
+==========================
+20210416132914:::
+heleon_chimp:::
+balance_and_home_service_day:::
+[specify_day]:::
+(immutables.Map({'value': [{'value': '2021-04-20T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-20T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2022-04-20T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2023-04-20T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'role': 'day', 'type': 'sys_time', 'span': {'start': 3, 'end': 11}, 'text': '20 квітня'}),):::
+На 20 квітня:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На который час вы желаете вызвать мастера?'}}]:::
+==========================
+20210416132932:::
+heleon_chimp:::
+balance_and_home_service_hour:::
+[clarify]:::
+():::
+Не понял вопрос:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Повторите, пожалуйста, на который час вы желаете вызвать мастера? Например: 17:00'}}]:::
+==========================
+20210416133005:::
+heleon_chimp:::
+balance_and_home_service_hour:::
+[specify_hour]:::
+(immutables.Map({'value': [{'value': '2021-04-16T19:40:00.000-07:00', 'alternate_values': [{'value': '2021-04-16T19:40:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T19:40:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-18T19:40:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'role': 'hour', 'type': 'sys_time', 'span': {'start': 3, 'end': 7}, 'text': '19:40'}),):::
+На 19:40:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите вызвать мастера на 2021-04-20 19:40?'}}]:::
+==========================
+20210416133018:::
+heleon_chimp:::
+balance_and_home_service_confirm:::
+[confirmation]:::
+():::
+Да:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Заявку на вызов мастера на 2021-04-20 19:40 создано.\nОжидайте звонка от мастера.'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'Чем еще можем вам помочь?'}}]:::
+==========================
+20210416133118:::
+heleon_chimp:::
+balance_and_home_service:::
+[home_service]:::
+():::
+Оформить заявку на мастера:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы желаете оставить заявку на вызов мастера домой?'}}]:::
+==========================
+20210416133118:::
+heleon_chimp:::
+home_service:::
+[home_service]:::
+():::
+Оформить заявку на мастера:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы желаете оставить заявку на вызов мастера домой?'}}]:::
+==========================
+20210416133157:::
+heleon_chimp:::
+balance_and_home_service:::
+[repeat]:::
+():::
+Повтори:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Извините, я вас не поняла. Вы желаете оставить заявку на вызов мастера домой?'}}]:::
+==========================
+20210416133204:::
+heleon_chimp:::
+balance_and_home_service:::
+[confirmation]:::
+():::
+да:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На какой день вы желаете вызвать мастера?'}}]:::
+==========================
+20210416133219:::
+heleon_chimp:::
+balance_and_home_service_day:::
+[repeat]:::
+():::
+Повтори:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Повторите, пожалуйста, на какой день вы желаете вызвать мастера? Вы можете выбрать день начиная с завтра до 2021-04-26'}}]:::
+==========================
+20210416133259:::
+heleon_chimp:::
+balance_and_home_service_day:::
+[clarify]:::
+():::
+Не понимаю:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Ожидайте соединения с оператором.'}}]:::
+==========================
+20210416133420:::
+heleon_chimp:::
+change_service_plan:::
+[change_service_plan]:::
+():::
+Нужна помощь:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сейчас ваш тарифный план: Смидл Спорт HD Pro +100. На какой тарифный план вы хотите перейти?'}}]:::
+==========================
+20210416133544:::
+heleon_chimp:::
+change_service_plan_selection:::
+[abort]:::
+():::
+Не надо:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Понятно. Чем еще мы можем вам помочь?'}}]:::
+==========================
+20210416133650:::
+heleon_chimp:::
+balance_and_home_service:::
+[balance_and_home_service]:::
+():::
+Поху посмотреть баланс и вызвать мастера:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Ваш баланс: -100'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы желаете оставить заявку на вызов мастера домой?'}}]:::
+==========================
+20210416133659:::
+heleon_chimp:::
+balance_and_home_service:::
+[abort]:::
+():::
+нет:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Понятно. Чем еще мы можем вам помочь?'}}]:::
+==========================
+20210416133709:::
+heleon_chimp:::
+balance_and_home_service:::
+[balance_and_home_service]:::
+():::
+Хочу проверить баланс и вызвать мастеера:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Ваш баланс: -100'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы желаете оставить заявку на вызов мастера домой?'}}]:::
+==========================
+20210416133759:::
+heleon_chimp:::
+balance_and_home_service:::
+[confirmation]:::
+():::
+Да:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На какой день вы желаете вызвать мастера?'}}]:::
+==========================
+20210416133808:::
+yurii_paustovskyi:::
+change_service_plan_selection:::
+[small_talk]:::
+():::
+Слухай, макс:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сейчас ваш тарифний план Смидл Спорт HD Pro +100. На какой тарифный план вы хотите перейти?'}}]:::
+==========================
+20210416133819:::
+heleon_chimp:::
+balance_and_home_service_day:::
+[specify_day_and_hour]:::
+(immutables.Map({'value': [{'value': '2021-04-17T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-17T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-24T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-05-01T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'role': 'day', 'type': 'sys_time', 'span': {'start': 3, 'end': 8}, 'text': 'суботу'}), immutables.Map({'value': [{'value': '2021-04-16T15:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-16T15:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T15:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-18T15:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'role': 'hour', 'type': 'sys_time', 'span': {'start': 14, 'end': 18}, 'text': '15:00'})):::
+На суботу, на 15:00:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы желаете вызвать мастера на 2021-04-17 15:00?'}}]:::
+==========================
+20210416133858:::
+heleon_chimp:::
+balance_and_home_service_confirm:::
+[confirmation]:::
+():::
+Да:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Заявку на вызов мастера на 2021-04-17 15:00 создано.\nОжидайте звонка от мастера.'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'Чем еще можем вам помочь?'}}]:::
+==========================
+20210416133955:::
+heleon_chimp:::
+balance_and_home_service_hour:::
+[balance_and_home_service]:::
+(immutables.Map({'value': [{'value': '2021-04-17T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-17T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-24T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-05-01T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'role': 'day', 'type': 'sys_time', 'span': {'start': 44, 'end': 49}, 'text': 'суботу'}), immutables.Map({'value': [{'value': '2021-04-16T15:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-16T15:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T15:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-18T15:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'role': 'hour', 'type': 'sys_time', 'span': {'start': 55, 'end': 59}, 'text': '15:00'})):::
+Хочу посмотреть баланс и вызвать мастера на суботу, на 15:00:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Ваш баланс: -100'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите вызвать мастера на 2021-04-17 15:00?'}}]:::
+==========================
+20210416133955:::
+heleon_chimp:::
+balance_and_home_service:::
+[balance_and_home_service]:::
+(immutables.Map({'value': [{'value': '2021-04-17T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-17T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-24T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-05-01T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'role': 'day', 'type': 'sys_time', 'span': {'start': 44, 'end': 49}, 'text': 'суботу'}), immutables.Map({'value': [{'value': '2021-04-16T15:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-16T15:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T15:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-18T15:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'role': 'hour', 'type': 'sys_time', 'span': {'start': 55, 'end': 59}, 'text': '15:00'})):::
+Хочу посмотреть баланс и вызвать мастера на суботу, на 15:00:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Ваш баланс: -100'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите вызвать мастера на 2021-04-17 15:00?'}}]:::
+==========================
+20210416134036:::
+heleon_chimp:::
+balance_and_home_service_confirm:::
+[confirmation]:::
+():::
+Верно:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Заявку на вызов мастера на 2021-04-17 15:00 создано.\nОжидайте звонка от мастера.'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'Чем еще можем вам помочь?'}}]:::
+==========================
+20210416134157:::
+heleon_chimp:::
+balance_and_home_service:::
+[balance_and_home_service]:::
+():::
+Хочу узнать баланс и вызвать мастера:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Ваш баланс: -100'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы желаете оставить заявку на вызов мастера домой?'}}]:::
+==========================
+20210416134200:::
+heleon_chimp:::
+balance_and_home_service:::
+[confirmation]:::
+():::
+Да:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На какой день вы желаете вызвать мастера?'}}]:::
+==========================
+20210416134210:::
+heleon_chimp:::
+balance_and_home_service_day:::
+[competence]:::
+():::
+А какие есть варианты?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Повторите, пожалуйста, на какой день вы желаете вызвать мастера? Вы можете выбрать день начиная с завтра до 2021-04-26'}}]:::
+==========================
+20210416134909:::
+heleon_chimp:::
+balance_and_home_service_day:::
+[thanks]:::
+():::
+Спасибо:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Повторите, пожалуйста, на какой день вы желаете вызвать мастера? Вы можете выбрать день начиная с завтра до 2021-04-26'}}]:::
+==========================
+20210416134920:::
+heleon_chimp:::
+balance_and_home_service_day:::
+[abort]:::
+():::
+Уже не надо:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Понятно. Чем еще мы можем вам помочь?'}}]:::
+==========================
+20210416142532:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+/start:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210416142537:::
+yurii_paustovskyi:::
+welcome:::
+[greet]:::
+():::
+ало:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Приветствую, Юрій!'}}]:::
+==========================
+20210416142552:::
+yurii_paustovskyi:::
+no_internet:::
+[no_internet]:::
+():::
+у меня интернет не работает:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сначала пройдите верификацию. Введите 8 цифр вашего договора.'}}]:::
+==========================
+20210416142555:::
+yurii_paustovskyi:::
+verify_service_number:::
+[verification]:::
+(immutables.Map({'value': [{'value': 87654321}], 'role': 'service_number', 'type': 'sys_number', 'span': {'start': 0, 'end': 7}, 'text': '87654321'}),):::
+87654321:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Введите номер вашего дома.'}}]:::
+==========================
+20210416142559:::
+yurii_paustovskyi:::
+verify_house_number:::
+[verification]:::
+(immutables.Map({'value': [{'value': 716}], 'role': 'house_number', 'type': 'sys_number', 'span': {'start': 0, 'end': 2}, 'text': '716'}),):::
+716:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Номер дома не действителен. Попробуйте еще.'}}]:::
+==========================
+20210416142601:::
+yurii_paustovskyi:::
+no_internet:::
+[verification]:::
+(immutables.Map({'value': [{'value': 71}], 'role': 'house_number', 'type': 'sys_number', 'span': {'start': 0, 'end': 1}, 'text': '71'}),):::
+71:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Последняя оплата на ваш счет была произведена 2021-02-04 11:22:33 в размере 73 грн.Сейчас ваша задолженность составляет 1234 грн.Оплатите, пожалуйста, 1234 грн, чтоб восстановить услугу интернета.\n\n'}}]:::
+==========================
+20210416142601:::
+yurii_paustovskyi:::
+verify_house_number:::
+[verification]:::
+(immutables.Map({'value': [{'value': 71}], 'role': 'house_number', 'type': 'sys_number', 'span': {'start': 0, 'end': 1}, 'text': '71'}),):::
+71:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Последняя оплата на ваш счет была произведена 2021-02-04 11:22:33 в размере 73 грн.Сейчас ваша задолженность составляет 1234 грн.Оплатите, пожалуйста, 1234 грн, чтоб восстановить услугу интернета.\n\n'}}]:::
+==========================
+20210416142610:::
+yurii_paustovskyi:::
+thanks:::
+[thanks]:::
+():::
+понятно, спасибо:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Пожалуйста.'}}]:::
+==========================
+20210416142621:::
+yurii_paustovskyi:::
+no_internet:::
+[no_internet]:::
+():::
+у меня проблема:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Последняя оплата на ваш счет была произведена 2021-02-04 11:22:33 в размере 73 грн.Сейчас ваша задолженность составляет 1234 грн.Оплатите, пожалуйста, 1234 грн, чтоб восстановить услугу интернета.\n\n'}}]:::
+==========================
+20210416142649:::
+yurii_paustovskyi:::
+no_internet:::
+[no_internet]:::
+():::
+у меня другая проблема:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Последняя оплата на ваш счет была произведена 2021-02-04 11:22:33 в размере 73 грн.Сейчас ваша задолженность составляет 1234 грн.Оплатите, пожалуйста, 1234 грн, чтоб восстановить услугу интернета.\n\n'}}]:::
+==========================
+20210416142653:::
+yurii_paustovskyi:::
+small_talk:::
+[small_talk]:::
+():::
+я понял:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Я бы с удовольствием с вами пообщалась, но могу помочь только с услугами компании "Смидл".'}}]:::
+==========================
+20210416142705:::
+yurii_paustovskyi:::
+competence:::
+[competence]:::
+():::
+а с чем ты можешь помочь:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Я могу помочь вам с такими вопросами:\n- проверить баланс\n- вызов мастера на дом\n- изменение тарифного плана\n- описание вашего тарифного плана\n- услуга "Кредит доверия"\n- проверка проблем с работой интернета.'}}]:::
+==========================
+20210416142807:::
+yurii_paustovskyi:::
+check_balance:::
+[check_balance]:::
+():::
+я хочу проверить баланс:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Ваш баланс: -1234'}}]:::
+==========================
+20210416142819:::
+yurii_paustovskyi:::
+balance_and_home_service:::
+[home_service]:::
+():::
+а можно вызвать мастера на дом?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы желаете оставить заявку на вызов мастера домой?'}}]:::
+==========================
+20210416142819:::
+yurii_paustovskyi:::
+home_service:::
+[home_service]:::
+():::
+а можно вызвать мастера на дом?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы желаете оставить заявку на вызов мастера домой?'}}]:::
+==========================
+20210416142822:::
+yurii_paustovskyi:::
+balance_and_home_service:::
+[confirmation]:::
+():::
+да:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На какой день вы желаете вызвать мастера?'}}]:::
+==========================
+20210416142832:::
+yurii_paustovskyi:::
+balance_and_home_service_day:::
+[home_service]:::
+(immutables.Map({'value': [{'value': '2021-04-17T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-17T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'role': 'day', 'type': 'sys_time', 'span': {'start': 3, 'end': 8}, 'text': 'завтра'}), immutables.Map({'value': [{'value': '2021-04-16T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-16T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'role': 'day', 'type': 'sys_time', 'span': {'start': 17, 'end': 24}, 'text': 'сьогодні'})):::
+на завтра или на сьогодні:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На который час вы желаете вызвать мастера?'}}]:::
+==========================
+20210416142842:::
+yurii_paustovskyi:::
+balance_and_home_service_hour:::
+[specify_day]:::
+():::
+на 14:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Повторите, пожалуйста, на который час вы желаете вызвать мастера? Например: 17:00'}}]:::
+==========================
+20210416142846:::
+yurii_paustovskyi:::
+balance_and_home_service_hour:::
+[specify_hour]:::
+(immutables.Map({'value': [{'value': '2021-04-16T14:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-16T14:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T14:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-18T14:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'role': 'hour', 'type': 'sys_time', 'span': {'start': 0, 'end': 4}, 'text': '14:00'}),):::
+14:00:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите вызвать мастера на 2021-04-16 14:00?'}}]:::
+==========================
+20210416142927:::
+yurii_paustovskyi:::
+balance_and_home_service_confirm:::
+[abort]:::
+():::
+нет:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На какой день вы желаете вызвать мастера?'}}]:::
+==========================
+20210416142939:::
+yurii_paustovskyi:::
+balance_and_home_service_day:::
+[home_service]:::
+(immutables.Map({'value': [{'value': '2021-04-16T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-16T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'role': 'day', 'type': 'sys_time', 'span': {'start': 3, 'end': 10}, 'text': 'сьогодні'}), immutables.Map({'value': [{'value': '2021-04-17T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-17T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'role': 'day', 'type': 'sys_time', 'span': {'start': 19, 'end': 24}, 'text': 'завтра'})):::
+на сьогодні или на завтра:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На который час вы желаете вызвать мастера?'}}]:::
+==========================
+20210416142949:::
+yurii_paustovskyi:::
+balance_and_home_service_hour:::
+[specify_hour]:::
+(immutables.Map({'value': [{'value': '2021-04-16T14:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-16T14:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T14:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-18T14:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'role': 'hour', 'type': 'sys_time', 'span': {'start': 3, 'end': 7}, 'text': '14:00'}),):::
+на 14:00:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите вызвать мастера на 2021-04-16 14:00?'}}]:::
+==========================
+20210416142958:::
+yurii_paustovskyi:::
+balance_and_home_service_confirm:::
+[confirmation]:::
+():::
+да:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Заявку на вызов мастера на 2021-04-16 14:00 создано.\nОжидайте звонка от мастера.'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'Чем еще можем вам помочь?'}}]:::
+==========================
+20210416143022:::
+yurii_paustovskyi:::
+balance_and_home_service:::
+[home_service]:::
+():::
+можно вызвать мастера на другой день?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы желаете оставить заявку на вызов мастера домой?'}}]:::
+==========================
+20210416143022:::
+yurii_paustovskyi:::
+home_service:::
+[home_service]:::
+():::
+можно вызвать мастера на другой день?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы желаете оставить заявку на вызов мастера домой?'}}]:::
+==========================
+20210416143028:::
+yurii_paustovskyi:::
+balance_and_home_service:::
+[confirmation]:::
+():::
+да, на четвер:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На какой день вы желаете вызвать мастера?'}}]:::
+==========================
+20210416143032:::
+yurii_paustovskyi:::
+balance_and_home_service_day:::
+[specify_day]:::
+(immutables.Map({'value': [{'value': '2021-04-22T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-22T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-29T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-05-06T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'role': 'day', 'type': 'sys_time', 'span': {'start': 3, 'end': 8}, 'text': 'четвер'}),):::
+на четвер:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На который час вы желаете вызвать мастера?'}}]:::
+==========================
+20210416143040:::
+yurii_paustovskyi:::
+balance_and_home_service_hour:::
+[abort]:::
+():::
+нет, спасибо, не хочу:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Понятно. Чем еще мы можем вам помочь?'}}]:::
+==========================
+20210416143053:::
+yurii_paustovskyi:::
+balance_and_home_service_hour:::
+[home_service]:::
+(immutables.Map({'value': [{'value': '2021-04-23T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-16T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-23T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-30T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'role': 'day', 'type': 'sys_time', 'span': {'start': 19, 'end': 26}, 'text': "п'ятницю"}), immutables.Map({'value': [{'value': '2021-04-16T16:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-16T16:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T16:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-18T16:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'role': 'hour', 'type': 'sys_time', 'span': {'start': 31, 'end': 35}, 'text': '16:00'})):::
+вызвать мастера на п'ятницю на 16:00:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите вызвать мастера на 2021-04-23 16:00?'}}]:::
+==========================
+20210416143053:::
+yurii_paustovskyi:::
+balance_and_home_service:::
+[home_service]:::
+(immutables.Map({'value': [{'value': '2021-04-23T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-16T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-23T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-30T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'role': 'day', 'type': 'sys_time', 'span': {'start': 19, 'end': 26}, 'text': "п'ятницю"}), immutables.Map({'value': [{'value': '2021-04-16T16:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-16T16:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T16:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-18T16:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'role': 'hour', 'type': 'sys_time', 'span': {'start': 31, 'end': 35}, 'text': '16:00'})):::
+вызвать мастера на п'ятницю на 16:00:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите вызвать мастера на 2021-04-23 16:00?'}}]:::
+==========================
+20210416143053:::
+yurii_paustovskyi:::
+home_service:::
+[home_service]:::
+(immutables.Map({'value': [{'value': '2021-04-23T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-16T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-23T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-30T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'role': 'day', 'type': 'sys_time', 'span': {'start': 19, 'end': 26}, 'text': "п'ятницю"}), immutables.Map({'value': [{'value': '2021-04-16T16:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-16T16:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T16:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-18T16:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'role': 'hour', 'type': 'sys_time', 'span': {'start': 31, 'end': 35}, 'text': '16:00'})):::
+вызвать мастера на п'ятницю на 16:00:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите вызвать мастера на 2021-04-23 16:00?'}}]:::
+==========================
+20210416143056:::
+yurii_paustovskyi:::
+balance_and_home_service_confirm:::
+[confirmation]:::
+():::
+да:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Заявку на вызов мастера на 2021-04-23 16:00 создано.\nОжидайте звонка от мастера.'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'Чем еще можем вам помочь?'}}]:::
+==========================
+20210416143117:::
+yurii_paustovskyi:::
+get_credit:::
+[get_credit]:::
+():::
+кредит доверия можно подключить?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Услуга "Кредит доверия" уже подключена. Чем еще можем вам помочь?'}}]:::
+==========================
+20210416143125:::
+yurii_paustovskyi:::
+abort:::
+[abort]:::
+():::
+а за что я плачу?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Буду рада вам помочь, если возникнут проблемы.'}}]:::
+==========================
+20210416143131:::
+yurii_paustovskyi:::
+service_plan_description:::
+[service_plan_description]:::
+():::
+за что я плачу?:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Ваш тарифный план: Смидл Спорт HD Pro +100.\n- Интернет до 100\nМбит/с\n- Более 70\nканалов\n- 10 HD каналов\n- Дополнительная услуга Смидл\nФутбол+:\nпрямые\nтрансляции всех\nматчей Лиги\nЧемпионов и Лиги \nЕвропы UEFA\nСтоимость составляет 319 гривен в месяц.'}}]:::
+==========================

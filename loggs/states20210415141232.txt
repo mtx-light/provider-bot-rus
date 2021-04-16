@@ -1,0 +1,168 @@
+20210415141235:::
+yurii_paustovskyi:::
+welcome:::
+[greet]:::
+():::
+Привет:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Приветствую, Юрій!'}}]:::
+==========================
+20210415141244:::
+yurii_paustovskyi:::
+balance_and_home_service:::
+[home_service]:::
+():::
+Хочу вызвать мастера:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сначала пройдите верификацию. Введите 8 цифр вашего договора.'}}]:::
+==========================
+20210415141244:::
+yurii_paustovskyi:::
+home_service:::
+[home_service]:::
+():::
+Хочу вызвать мастера:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сначала пройдите верификацию. Введите 8 цифр вашего договора.'}}]:::
+==========================
+20210415141249:::
+yurii_paustovskyi:::
+verify_service_number:::
+[verification]:::
+(immutables.Map({'span': {'start': 0, 'end': 7}, 'role': 'service_number', 'value': [{'value': 87654321}], 'text': '87654321', 'type': 'sys_number'}),):::
+87654321:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Введите номер вашего дома.'}}]:::
+==========================
+20210415141252:::
+yurii_paustovskyi:::
+balance_and_home_service:::
+[verification]:::
+(immutables.Map({'span': {'start': 0, 'end': 1}, 'role': 'house_number', 'value': [{'value': 71}], 'text': '71', 'type': 'sys_number'}),):::
+71:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы желаете оставить заявку на вызов мастера домой?'}}]:::
+==========================
+20210415141252:::
+yurii_paustovskyi:::
+verify_house_number:::
+[verification]:::
+(immutables.Map({'span': {'start': 0, 'end': 1}, 'role': 'house_number', 'value': [{'value': 71}], 'text': '71', 'type': 'sys_number'}),):::
+71:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы желаете оставить заявку на вызов мастера домой?'}}]:::
+==========================
+20210415141258:::
+yurii_paustovskyi:::
+balance_and_home_service:::
+[confirmation]:::
+():::
+Да:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На какой день вы желаете вызвать мастера?'}}]:::
+==========================
+20210415141302:::
+yurii_paustovskyi:::
+balance_and_home_service_day:::
+[specify_day]:::
+(immutables.Map({'span': {'start': 3, 'end': 8}, 'role': 'day', 'value': [{'value': '2021-04-22T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-22T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-29T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'text': 'четвер', 'type': 'sys_time'}),):::
+На четвер:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На который час вы желаете вызвать мастера?'}}]:::
+==========================
+20210415141308:::
+yurii_paustovskyi:::
+balance_and_home_service_hour:::
+[specify_hour]:::
+(immutables.Map({'span': {'start': 3, 'end': 7}, 'role': 'hour', 'value': [{'value': '2021-04-15T17:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-16T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'text': '17:00', 'type': 'sys_time'}),):::
+На 17:00:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите вызвать мастера на 2021-04-22 17:00?'}}]:::
+==========================
+20210415141326:::
+yurii_paustovskyi:::
+balance_and_home_service_confirm:::
+[confirmation]:::
+():::
+Да:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Заявку на вызов мастера на 2021-04-22 17:00 создано.\nОжидайте звонка от мастера.'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'Чем еще можем вам помочь?'}}]:::
+==========================
+20210415141333:::
+yurii_paustovskyi:::
+default:::
+[specify_day]:::
+(immutables.Map({'span': {'start': 0, 'end': 7}, 'role': 'day', 'value': [{'value': '2021-04-15T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'text': 'сьогодні', 'type': 'sys_time'}),):::
+сьогодні:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Прошу прощения?'}}]:::
+==========================
+20210415141341:::
+yurii_paustovskyi:::
+default:::
+[specify_day]:::
+(immutables.Map({'span': {'start': 0, 'end': 4}, 'role': 'day', 'value': [{'value': '2021-04-14T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-14T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'text': 'вчора', 'type': 'sys_time'}),):::
+вчора:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Прошу прощения?'}}]:::
+==========================
+20210415141349:::
+yurii_paustovskyi:::
+default:::
+[specify_day]:::
+(immutables.Map({'span': {'start': 0, 'end': 10}, 'role': 'day', 'value': [{'value': '2021-04-17T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-17T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'text': 'післязавтра', 'type': 'sys_time'}),):::
+післязавтра:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Прошу прощения?'}}]:::
+==========================
+20210415141358:::
+yurii_paustovskyi:::
+default:::
+[specify_day]:::
+(immutables.Map({'span': {'start': 0, 'end': 7}, 'role': 'day', 'value': [{'value': '2021-05-01T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-05-01T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2022-05-01T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2023-05-01T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'text': '1 травня', 'type': 'sys_time'}),):::
+1 травня:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Прошу прощения?'}}]:::
+==========================
+20210415141415:::
+yurii_paustovskyi:::
+welcome:::
+[greet]:::
+():::
+Привет:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Да, Юрій, чем могу вам помочь?'}}]:::
+==========================
+20210415141431:::
+yurii_paustovskyi:::
+balance_and_home_service:::
+[home_service]:::
+(immutables.Map({'span': {'start': 24, 'end': 31}, 'role': 'day', 'value': [{'value': '2021-04-16T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-16T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-23T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-30T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'text': "п'ятницю", 'type': 'sys_time'}),):::
+Хочу вызвать мастера на п'ятницю:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На который час вы желаете вызвать мастера?'}}]:::
+==========================
+20210415141431:::
+yurii_paustovskyi:::
+home_service:::
+[home_service]:::
+(immutables.Map({'span': {'start': 24, 'end': 31}, 'role': 'day', 'value': [{'value': '2021-04-16T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-16T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-23T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-30T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'text': "п'ятницю", 'type': 'sys_time'}),):::
+Хочу вызвать мастера на п'ятницю:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'На который час вы желаете вызвать мастера?'}}]:::
+==========================
+20210415141438:::
+yurii_paustovskyi:::
+balance_and_home_service_hour:::
+[specify_hour]:::
+(immutables.Map({'span': {'start': 3, 'end': 7}, 'role': 'hour', 'value': [{'value': '2021-04-15T16:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T16:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-16T16:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T16:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'text': '16:00', 'type': 'sys_time'}),):::
+На 16:00:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вы хотите вызвать мастера на 2021-04-16 16:00?'}}]:::
+==========================
+20210415141441:::
+yurii_paustovskyi:::
+balance_and_home_service_confirm:::
+[confirmation]:::
+():::
+Да:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Заявку на вызов мастера на 2021-04-16 16:00 создано.\nОжидайте звонка от мастера.'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'Чем еще можем вам помочь?'}}]:::
+==========================
+20210415141449:::
+yurii_paustovskyi:::
+default:::
+[specify_day_and_hour]:::
+(immutables.Map({'span': {'start': 24, 'end': 28}, 'role': 'hour', 'value': [{'value': '2021-04-15T17:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-16T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'text': '17:00', 'type': 'sys_time'}),):::
+Хочу вызвать мастера на 17:00:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Прошу прощения?'}}]:::
+==========================
+20210415141503:::
+yurii_paustovskyi:::
+balance_and_home_service:::
+[balance_and_home_service]:::
+(immutables.Map({'span': {'start': 24, 'end': 29}, 'role': 'day', 'value': [{'value': '2021-04-22T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-22T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-29T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'text': 'четвер', 'type': 'sys_time'}), immutables.Map({'span': {'start': 34, 'end': 38}, 'role': 'day', 'value': [{'value': '2021-04-15T17:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-16T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'text': '17:00', 'type': 'sys_time'})):::
+Хочу вызвать мастера на четвер на 17:00:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Ваш баланс: -1234'}}, {'name': 'reply', 'type': 'view', 'payload': {'text': 'На который час вы желаете вызвать мастера?'}}]:::
+==========================

@@ -1,0 +1,16 @@
+20210405123013:::
+inmost_light:::
+balance_and_home_service:::
+[balance_and_home_service]:::
+():::
+Хочу перевірити скільки грошей у мене на рахунку:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'balance_and_home_service'}}]:::
+==========================
+20210405123013:::
+inmost_light:::
+welcome:::
+[greet]:::
+():::
+Привітулі!:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Вітаю, Максиме!'}}]:::
+==========================

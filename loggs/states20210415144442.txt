@@ -1,0 +1,16 @@
+20210415144444:::
+inmost_light:::
+balance_and_home_service:::
+[balance_and_home_service]:::
+(immutables.Map({'span': {'start': 19, 'end': 24}, 'value': [{'value': '2021-04-22T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-22T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-29T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'type': 'sys_time', 'role': 'day', 'text': 'четвер'}), immutables.Map({'span': {'start': 29, 'end': 33}, 'value': [{'value': '2021-04-15T17:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-16T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'type': 'sys_time', 'role': 'day', 'text': '17:00'})):::
+Вызвать мастера на четвер на 17:00:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Сначала пройдите верификацию. Введите 8 цифр вашего договора.'}}]:::
+==========================
+20210415144700:::
+yurii_paustovskyi:::
+default:::
+[specify_hour]:::
+(immutables.Map({'span': {'start': 0, 'end': 4}, 'value': [{'value': '2021-04-15T17:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-15T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-16T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}, {'value': '2021-04-17T17:00:00.000-07:00', 'grain': 'minute', 'type': 'value'}], 'grain': 'minute'}], 'type': 'sys_time', 'role': 'hour', 'text': '17:00'}),):::
+17:00:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Прошу прощения?'}}]:::
+==========================

@@ -1,0 +1,24 @@
+20210415134809:::
+inmost_light:::
+welcome:::
+[greet]:::
+():::
+Привет:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Приветствую, Максим!'}}]:::
+==========================
+20210415134813:::
+inmost_light:::
+welcome:::
+[greet]:::
+():::
+Привет:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Да-да, я вас слушаю'}}]:::
+==========================
+20210415134818:::
+inmost_light:::
+default:::
+[specify_day]:::
+(immutables.Map({'role': 'day', 'text': 'вівторок', 'span': {'start': 3, 'end': 10}, 'value': [{'value': '2021-04-20T00:00:00.000-07:00', 'alternate_values': [{'value': '2021-04-20T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-04-27T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}, {'value': '2021-05-04T00:00:00.000-07:00', 'grain': 'day', 'type': 'value'}], 'grain': 'day'}], 'type': 'sys_time'}),):::
+На вівторок:::
+[{'name': 'reply', 'type': 'view', 'payload': {'text': 'Прошу прощения?'}}]:::
+==========================

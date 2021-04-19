@@ -47,7 +47,7 @@ with open(f'loggs/{timestamp()}.txt', 'w') as logger:
             print(username)
             print(request_text)
             history = conversations[username]['conversation'].history
-            if history:
+            if False:
                 intent = history[0]['request']['intent']
                 resp += f"\n[{intent}]"
                 if history[0]['request']['entities']:
